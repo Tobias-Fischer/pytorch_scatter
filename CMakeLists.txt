@@ -11,6 +11,7 @@ if(WITH_CUDA)
   enable_language(CUDA)
   add_definitions(-D__CUDA_NO_HALF_OPERATORS__)
   add_definitions(-DWITH_CUDA)
+  add_definitions(-DUSE_CUDA)
   set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --expt-relaxed-constexpr")
 endif()
 
